@@ -1,1 +1,1 @@
-# Currency-Converter
+"Currency Converter: GitHub project for quick, accurate currency conversion. Enter amount, select currencies, and get real-time exchange rates. Simplify financial transactions and travel plans."# Currency-Converter
