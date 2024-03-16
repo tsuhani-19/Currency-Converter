@@ -1,0 +1,55 @@
+import java.util.*;
+import java.text.DecimalFormat;
+public class currencyconverter {
+    public static void main(String[] args) {
+        double rupee,dollar,pound,code,euro;
+        DecimalFormat f = new DecimalFormat("##.###");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the choice to convert the currency :");
+        code=sc.nextInt();
+        if(code==1){
+            System.out.println("Enter the amount in rupees");
+            rupee=sc.nextInt();
+            dollar=rupee/77.34;
+            System.out.println("Dollar:"+f.format(dollar));
+            pound=rupee/94.46;
+            System.out.println("Pound:"+f.format(pound));
+            euro = rupee/80.36;
+            System.out.println("Euro:"+f.format(euro));
+        } else if (code==2) {
+            System.out.println("Enter the amount in dollar");
+            dollar=sc.nextInt();
+            rupee= dollar *77.34;
+            System.out.println("Rupees:"+f.format(rupee));
+            pound=dollar*0.82;
+            System.out.println("Pound:"+f.format(pound));
+            euro = dollar*0.31;
+            System.out.println("Euro:"+f.format(euro));
+        } else if (code==3) {
+            System.out.println("Enter the amount in Euro");
+            euro=sc.nextInt();
+            rupee= euro * 80.43;
+            System.out.println("Rupees:"+f.format(rupee));
+            dollar =euro*80.43;
+            System.out.println("Dollar:"+f.format(dollar));
+            pound=euro*0.85;
+            System.out.println("Pound:"+f.format(pound));
+
+        } else if (code==4) {
+            System.out.println("Ente rthe amount in Pounds");
+            pound=sc.nextInt();
+            rupee = pound * 94.43;
+            System.out.println("Rupee:"+f.format(rupee));
+            dollar=pound*1.22;
+            System.out.println("Dollar:"+f.format(dollar));
+            euro = pound*1.17;
+            System.out.println("Euro:"+f.format(euro));
+
+        }
+        else{
+            System.out.println("Please enter the correct data");
+        }
+
+
+    }
+}
